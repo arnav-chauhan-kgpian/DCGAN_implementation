@@ -1,30 +1,50 @@
-Deep Convolutional GAN (DCGAN) Implementation
+# Deep Convolutional GAN (DCGAN)
 
-A clean, from-scratch implementation of a Deep Convolutional Generative Adversarial Network (DCGAN), designed to learn and generate realistic images from a random noise distribution.
-📋 Project Overview
+A from-scratch implementation of a Deep Convolutional Generative Adversarial Network.
 
-This project explores the architecture and training stability of DCGANs. By pitting a Generator against a Discriminator, the network iteratively improves until it produces plausible synthetic images.
+📌 Overview
 
-Key Features:
+This repository contains a clean, fully scratch-built implementation of a Deep Convolutional GAN (DCGAN). The goal of this project is to explore GAN training dynamics, stability tricks, and convolutional architectures by directly implementing the Generator and Discriminator without relying on high-level GAN toolkits.
 
-    From Scratch: Implemented without high-level GAN wrappers to understand the core mechanics.
+The model learns to generate realistic images from random noise using adversarial training, where:
 
-    Progressive Training: Visualizes how the model learns features over time.
+The Generator synthesizes fake images.
 
-    Kaggle Integration: Originally developed and trained using Kaggle's GPU accelerators (P100).
+The Discriminator distinguishes real images from generated ones.
 
-🖼️ Training Results & Progression
+Both networks improve iteratively in a competitive learning setup.
 
-Note: Due to a versioning conflict within the Kaggle environment, the full continuous execution log for the final run is unavailable. However, image checkpoints were successfully retrieved every 30 epochs out of 300 to demonstrate model convergence. Total training time was around 12 hours. 
+🚀 Key Features
 
-🛠️ Built With
+🔧 Pure From-Scratch Implementation
+No GAN wrappers, only core TensorFlow/Keras layers to ensure full transparency in how DCGANs work.
 
-    Python
+📈 Training Progress Visualization
+The model logs and saves generated images at regular intervals, making it easy to observe progressive feature learning.
 
-    tensorflow
+💻 Kaggle-Optimized Workflow
+Developed and trained on Kaggle GPU (Tesla P100) with minor environmental adjustments for compatibility.
 
-    Kaggle Kernels
+🖼️ Training Results
 
-✍️ Author
+Although Kaggle encountered a versioning clash that prevented logging the entire final execution output, image snapshots were saved successfully.
+
+Images were generated every 30 epochs over 300 total epochs.
+
+The checkpoints demonstrate clear convergence as the generator learns finer details.
+
+Total training time: ~12 hours on Kaggle P100 GPU.
+
+You can find the progression images inside the project folder.
+
+🛠️ Tech Stack
+
+Python
+
+TensorFlow / Keras
+
+Kaggle Kernels
+
+👤 Author
 
 Created with ❤️ by Arnav Chauhan
