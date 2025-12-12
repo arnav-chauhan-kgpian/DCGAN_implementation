@@ -4,7 +4,7 @@ A from-scratch implementation of a Deep Convolutional Generative Adversarial Net
 
 📌 Overview
 
-This repository contains a clean, fully scratch-built implementation of a Deep Convolutional GAN (DCGAN). The goal of this project is to explore GAN training dynamics, stability tricks, and convolutional architectures by directly implementing the Generator and Discriminator without relying on high-level GAN toolkits.
+This repository contains a clean, fully scratch-built implementation of a Deep Convolutional GAN (DCGAN) based on the original DCGAN paper https://arxiv.org/abs/1511.06434 . The goal of this project is to explore GAN training dynamics, stability tricks, and convolutional architectures by directly implementing the Generator and Discriminator without relying on high-level GAN toolkits.
 
 The model learns to generate realistic images from random noise using adversarial training, where:
 
